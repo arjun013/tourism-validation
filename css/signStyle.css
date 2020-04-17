@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{  
+    background: cadetblue;
+}
+
+.fa-user{
+    font-size: 80px;
+    color: rgb(46, 65, 128);
+    border: 3px solid white;
+    padding: 20px 30px;
+    border-radius: 50%;
+    background: transparent;
+}
+.area{
+    padding: 20px 0;
+    background: lightgray;
+}
+.nav-link{
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color: lightgray;
+    border-color: lightgray;
+}
+form input{
+    outline: none;
+}
+.text-left input[type="radio"]{
+    margin-left: 10%;
+}
+.icons{
+    margin: 0 20px;
+    padding: 0 6px;
+    
+    
+}
+.icons i:hover{
+    transform: scale(1.1);
+    
+    
+}
+.fa-facebook{
+    background: #3b5998;
+    color: white;
+    padding: 3px 5px 3px 15px;
+    border-radius: 2px;
+    font-size: 30px;
+}
+.fa-twitter{
+    background: #08a0e9;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.fa-google-plus{
+    background: #db4437;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.form-controls{
+    width: 100%;
+    outline: none ;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: darkslategrey;
+}
+
+
+#eye{
+    position: absolute;
+    background-color: transparent; 
+    border: transparent;
+    transform: translate(-20px,3px);
+    outline: none;
+    
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    color: darkslategrey;
+}
+.navbar{
+background: rgb(0, 0, 0,0.5) ;
+}
+
+.nav{
+    background: rgb(0, 0, 0,0);
+}
+
+.nav-link{
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color: lightgray;
+    border-color: lightgray;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    max-width: 60%;
+}
+.slider h5{
+    color: white;    
+    animation: 10s slide-right 1s forwards infinite;
+    transform:translateX(-100%);
+}
+@keyframes slide-right {
+  to {
+    transform:translateX(100%);
+  }
+}
+
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
+}
+.carousel-caption h4{
+    font-family: cursive;
+}
+.card{
+    background-color: darkslategrey;
+    color: white;
+    margin-bottom: 3px;
+}
+.cards{
+    height: 480px;
+    }
+.cards div{
+        background:  rgb(0, 0, 0,0.5);
+    }
+.card1{
+    background: url(../images/home/art.png) no-repeat center;
+    background-size: cover;
+}
+.card2{
+    background: url(../images/home/culture1.jpg) no-repeat center;
+    background-size: cover;
+}
+.card3{
+    background: url(../images/home/knowledge1.jpg) no-repeat center;
+    background-size: cover;
+}
+hr{
+    border-color: teal;
+}
+footer{
+    background-image: linear-gradient(to bottom,rgb(78, 194, 116),#38c525);
+    color: white;
+}
+footer p{
+    font-size: 17px;
+}
+footer hr{
+    border-color: white;
+}

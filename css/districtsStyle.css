@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-image: linear-gradient(to right,rgb(26, 139, 184),lightblue);
+}
+/* .navbar{
+    background: rgb(0, 0, 0,.5);
+} */
+.nav{
+    background: rgb(0, 0, 0,0);
+}
+
+.nav-link{
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color: lightgray;
+    border-color: lightgray;
+}
+.row1{
+    margin-top: 120px;
+}
+.area{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 400px;
+    margin: 20px 40px 20px 20px;
+}
+
+.area h2 {
+    color: white;
+    padding: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid white;
+    
+}
+.area:hover{
+    opacity: .8;
+}
+.area:hover h2{
+    border: 2px solid #0e76a8;
+    color: #0e76a8;
+}
+
+.area1{
+    background-image: url(../images/district/tvmhome.jpg);
+    background-size: cover;  
+}
+
+.area2{
+    background-image: url(../images/district/klmhome.jpg);
+    background-size: cover;
+}
+
+.area3{
+    background-image: url(../images/district/ptahome.jpg);
+    background-size: cover;  
+}
+
+.area4{
+    background-image: url(../images/district/alphome.jpg);
+    background-size: cover;  
+}
+.area5{
+    background-image: url(../images/district/ktmhome.jpg);
+    background-size: cover;  
+}
+.area6{
+    background-image: url(../images/district/idkhome.jpg);
+    background-size: cover;  
+}
+.area7{
+    background-image: url(../images/district/ekmhome.jpg);
+    background-size: cover;  
+}
+
+.area8{
+    background-image: url(../images/district/tsrhome.jpg);
+    background-size: cover;  
+}
+
+.area9{
+    background-image: url(../images/district/pkdhome.jpg);
+    background-size: cover;
+}
+
+.area10{
+    background-image: url(../images/district/mlphome.png);
+    background-size: cover;  
+}
+
+.area11{
+    background-image: url(../images/district/kkdhome.jpg);
+    background-size: cover;  
+}
+.area12{
+    background-image: url(../images/district/wydhome.jpg);
+    background-size: cover;  
+}
+.area13{
+    background-image: url(../images/district/knrhome.jpg);
+    background-size: cover;  
+}
+.area14{
+    background-image: url(../images/district/kzdhome.jpg);
+    background-size: cover;  
+}
+footer{
+    background: #0e76a8;
+    color: white;
+}

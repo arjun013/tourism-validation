@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/signStyle.css">
+</head>
+<body>
+    
+        <!-- content -->
+        <div class="row">
+            <div class="col-1 col-sm-2 col-md-3"></div>
+            <div class="col-10 col-sm-8 col-md-6 m-3">
+                <div class="area">
+                    <form class="text-center" action="login.html" onsubmit="return validate();">
+                            <i class="fa fa-user"></i>
+                            <h1>Sign Up</h1>
+                        <table class="table text-left font-weight-bold">
+                            <tr>
+                                <td>First Name</td>
+                                <td><input type="text" class="form-control" ></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td><input type="text" class="form-control" ></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="text" class="form-control" id="mail"> <p class="" id="errorMail"></p></td>
+
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td><input type="text" class="form-control" id="phone" > 
+                                    <div class="" id="errorMob"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Select a Username</td>
+                                <td><input type="text" class="form-control"  ></td>
+                            </tr>
+                            <tr>
+                                <td>Select a Password</td>
+                                <td><input type="password" class="form-controls" id="pass1" onkeyup="display();" >
+                                    <button type="button" id="eye" onclick="visible();"><i class="fa fa-eye"  ></i></button>
+                                    <p class="" id="errorPass"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password</td>
+                                <td><input type="password" class="form-control" id="pass2" onkeyup="passConfirm(0);"><p class="" id="errorConfirm"></p></td>
+                            </tr>                                              
+                        </table>
+                        <button type="submit" class="col-10 col-sm-10 btn btn-secondary"><b>Join Now</b></button>
+                        <div class="container icons"><hr class="m-4">
+                                <h3 class="text-primary">Or Connect With</h3><br>
+                                <a href="#" class="icons"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="icons"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="icons"><i class="fa fa-google-plus"></i></a>
+                                
+                        </div><br>
+                        <div class="container">
+                        <h5 class="border border-info p-2 bg-primary">Already Joined? <a href="login.html" class="text-white"><u>Click here to Sign In</u></a></h5>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1 col-sm-2 col-md-3"></div>
+        </div>
+        <footer><hr class="border-dark">
+            <div class="row">
+               <div class="col">
+                    <h5 class="text-white text-center">copyright &copy; 2020 Kerala Tourism Development Council [KTDC]</h5><br>
+               </div>
+            </div>                
+    </footer>
+    <script src="js/signup.js"></script>
+</body>
+</html>

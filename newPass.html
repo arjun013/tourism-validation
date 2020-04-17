@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Renew Your Credentials</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+        background-color: #b1b1ccb7;
+    }
+    </style>
+</head>
+<body>
+    <div class="container  text-center p-2"><h2>Update Your Password</div></h2>
+    <div class="row m-1 p-2">
+        <div class="col-md-2"></div>
+        <div class="col col-md-8">
+            <form action="login.html" class="jumbotron" onsubmit="return validateNew();">
+                <div class="row">
+                    <div class="col-4 m-2"><label for="" class="text-dark"><strong> Enter your username</strong></label></div>
+                    <div class="col-6 m-2"><input type="text" class="form-control"></div>
+                    
+                </div><hr >
+                
+                <div class="row">
+                        <div class="col-4 m-2"><label for="" class="text-dark"><strong> Enter email</strong></label></div>
+                        <div class="col-6 m-2"><input type="text" class="form-control" id="mail"> <p class="" id="errorMail"></p></div>
+                </div><hr >
+                <div class="row">
+                    <div class="col-4 m-2"><label for="" class="text-dark"><strong> Enter your Mobile Number</strong></label></div>
+                    <div class="col-6 m-2"><input type="text" class="form-control" id="phone"><div class="" id="errorMob"></div></div>
+                </div><hr >
+                <div class="row">
+                        <div class="col-4 m-2"><label for="" class="text-dark"><strong> Enter new password</strong></label></div>
+                        <div class="col-6 m-2"><input type="password" class="form-control" id="pass1" onkeyup="display();"><p class="" id="errorPass"></p></div>
+                </div><hr >
+                <div class="row">
+                        <div class="col-4 m-2"><label for="" class="text-dark"><strong> Confirm new password</strong></label></div>
+                        <div class="col-6 m-2"><input type="password" class="form-control" id="pass2" onkeyup="passConfirm(0);"><p class="" id="errorConfirm"></p></div>
+                </div><hr >
+                <div class="row">
+                    <div class="col text-center">
+                        <!-- <button class="btn btn-secondary">Verify</button> -->
+                    </div>
+                    <div class="col text-left">
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <footer>
+            <hr class="border-dark">
+            <div class="row">
+               <div class="col">
+                    <h5 class="text-center text-dark">copyright &copy; 2020 Kerala Tourism Development Council [KTDC]</h5>
+               </div>
+            </div>                
+    </footer>
+    <script src="js/signup.js"></script>
+</body>
+</html>
