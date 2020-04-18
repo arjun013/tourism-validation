@@ -19,12 +19,12 @@
             <div class="col-1 col-sm-3"></div>
             <div class="col-10 col-sm-6 text-center text-white area">
                     <br><h2 class="text-white text-center display-4">LOGIN <i class="fa fa-sign-in"></i></h2><hr class="my-4 border-white">
-                <form class="text-center" >
+                <form class="text-center" action="homeLogin.html" onsubmit="return allFields();">
                         <i class="fa fa-user"></i>
                     <input type="text" placeholder="username or email" class="text-center"><br><br>
                     <i class="fa fa-lock"></i>
                     <input type="password" placeholder="password" class="text-center"><br><br>
-                    <a href="homeLogin.html"><button type="button" class="btn btn-md  btn-circle"><b>LogIn</b></button></a><br><br>
+                    <button type="submit" class="btn btn-md  btn-circle"><b>LogIn</b></button><br><br>
                     <h6><a href="newPass.html" class="text-dark">forgot password?</a></h6>
                 </form><hr class="border-white">
                 
@@ -48,6 +48,27 @@
                </div>
             </div>                
     </footer>
+    <script>
+        function allFields(){
+            let fields=document.querySelectorAll("input");
+            for (let index = 0; index < fields.length; index++) {
+                fields[index].style.border="2px solid white" ;
+        if (fields[index].value.trim()=='') {
+            fields[index].style.border="3px solid green" ;
+            if (index==0) {
+                fields[index].value='';
+                fields[index].setAttribute("placeholder","Enter your username");
+            } else {
+                fields[index].value='';
+                fields[index].setAttribute("placeholder","Enter your password");
+            }
+            
+            return false;
+            break;
+        };        
+    }
+        }
+    </script>
 
 </body>
 </html>
