@@ -23,7 +23,8 @@
                         <i class="fa fa-user"></i>
                     <input type="text" placeholder="username or email" class="text-center"><br><br>
                     <i class="fa fa-lock"></i>
-                    <input type="password" placeholder="password" class="text-center"><br><br>
+                    <input type="password" placeholder="password" id="pWord" class="text-center">
+                    <p id="errorPass" class="text-dark" hidden=true>Not a valid password</p><br><br>
                     <button type="submit" class="btn btn-md  btn-circle"><b>LogIn</b></button><br><br>
                     <h6><a href="newPass.html" class="text-dark">forgot password?</a></h6>
                 </form><hr class="border-white">
@@ -48,27 +49,7 @@
                </div>
             </div>                
     </footer>
-    <script>
-        function allFields(){
-            let fields=document.querySelectorAll("input");
-            for (let index = 0; index < fields.length; index++) {
-                fields[index].style.border="2px solid white" ;
-        if (fields[index].value.trim()=='') {
-            fields[index].style.border="3px solid green" ;
-            if (index==0) {
-                fields[index].value='';
-                fields[index].setAttribute("placeholder","Enter your username");
-            } else {
-                fields[index].value='';
-                fields[index].setAttribute("placeholder","Enter your password");
-            }
-            
-            return false;
-            break;
-        };        
-    }
-        }
-    </script>
+    <script src="js/log.js"></script> 
 
 </body>
 </html>
